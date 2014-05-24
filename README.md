@@ -25,6 +25,7 @@ A:
 3. Project_instructions.txt - Instructions copied verbatim from the Coursera project page. https://class.coursera.org/getdata-003/human_grading/view/courses/972136/assessments/3/submissions
 4. run_analysis.R - R programming language script used for creating tidy data set.
 
+-------------------------------------
 
 Q: What's the purpose of the 'run_analysis.R' script?
 
@@ -35,8 +36,9 @@ As mentioned on the coursera web page for the course as well as the 'Project_ins
 	2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 	3. Uses descriptive activity names to name the activities in the data set
 	4. Appropriately labels the data set with descriptive activity names. 
-	5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+	5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+-------------------------------------
 
 Q: All that sounds good, but what exactly does this script do? Can you break it down for me?
 
@@ -50,6 +52,7 @@ You can refer to the CodeBook.md for a more technical version for the data analy
 4. Attach appropriate descriptive labels to columns.
 5. Perform computations on the data set to obtain the desired tidy data set.
 
+-------------------------------------
 
 Q: How do I use the 'run_analysis.R' script?
 
