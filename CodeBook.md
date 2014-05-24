@@ -1,7 +1,5 @@
 Study Design
-============delimited
-The goal of the project is to learn to extract, link and summarise data to obtain a tidy data set from raw data.
-
+==============
 The raw data for this project has been obtained from the archives of University of California Irvine's Machine Learning Repository.
 Information of dataset as described on the data set's website(http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) is as follows
 
@@ -24,8 +22,8 @@ Raw data set download source:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 
-Code Book
-=========
+Data features
+=============
 
 Measurement based continuous features
 --------------------------
@@ -33,6 +31,7 @@ These files have 561 features, corresponding to the columns of raw data set. The
 Refer to features file as mentioned below for exact feature names.
 
 All the features are derived from some basic measurements as described below.
+
 1. The basic features/measurements selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
 These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
 
@@ -100,16 +99,19 @@ Note:
 
 
 Categorical/Nominal features
-----------------
+----------------------------
 
 1. Subject
-A numeric value that identifies the 'Subject' who performed the 'Activity' for each window sample. Its range is from 1 to 30.
+A numeric value that identifies the 'Subject' who performed the 'Activity' for each window sample.
+Its range is from 1 to 30.
+
 R data frame column name: subject.id
 R data frame column type: numeric
 
 2. Activity
 The 'Activity' which a 'Subject' was performing when the features/measurements were captured/recorded.
 Refer to activity file as mentioned below for exact labels.
+
 R data frame column name: activity.label
 R data frame column type: character
 
