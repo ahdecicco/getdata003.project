@@ -35,10 +35,11 @@ As mentioned on the coursera web page for the course as well as the 'Project_ins
 Q: All that sounds good, but what exactly does this script do? Can you break it down for me?
 A:
 You can refer to the CodeBook.md for a more technical version for the data analysis, but here is an abridged version.
-1. Load the raw data files into the programming environment.
-2. Combine segregated raw data into an exhaustive combined data set.
-3. Attach appropriate descriptive labels to columns.
-4. Perform computations on the data set to obtain the desired tidy data set.
+1. The script looks for the project's raw data in the current directory, if it either finds the zip file 'getdata-projectfiles-UCI HAR Dataset.zip' or the 'UCI HAR Dataset' directory, it assumes you have the raw data locally and uses it, if not it attempts to download the data from the project data source mentioned in Project_instructions.txt file or the Coursera web page for the project.
+2. Load the raw data files into the programming environment.
+3. Combine segregated raw data into an exhaustive combined data set.
+4. Attach appropriate descriptive labels to columns.
+5. Perform computations on the data set to obtain the desired tidy data set.
 
 Q: How do I use the 'run_analysis.R' script?
 A:

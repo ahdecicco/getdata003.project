@@ -1,4 +1,14 @@
 #
+#Check if raw data already present in the repo, if not attempt to download it from the web source
+#
+if(!file.exists('UCI HAR Dataset/')) {
+	if(!file.exists('getdata-projectfiles-UCI HAR Dataset.zip')) {
+		download.file('https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip');
+		}
+		unzip('getdata-projectfiles-UCI HAR Dataset.zip');
+}
+
+#
 #Specify file names for all relevant data files
 #
 features.file <- "./UCI HAR Dataset/features.txt"
