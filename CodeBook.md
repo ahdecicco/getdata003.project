@@ -252,7 +252,7 @@ activity.id activity.label
 
 6 laying
 
-Continous Features
+Continuous Features
 ------------------
 Data type: numeric
 
