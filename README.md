@@ -13,8 +13,8 @@ OS version: OSX 10.9.2
 R version: 3.0.3 
 Hardware: MacBook Pro, Late 2011
 Tools: RStudio, Terminal.app
-====================================
 
+------------------------------------
 
 Q: What can I find in this project repo?
 
