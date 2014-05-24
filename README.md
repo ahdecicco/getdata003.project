@@ -4,6 +4,7 @@ Course Project
 =====================================
 
 Author: Nitish Vashishtha
+
 Email: nitishv87@gmail.com
 
 Author's creation/test environment:
@@ -41,12 +42,16 @@ You can refer to the CodeBook.md for a more technical version for the data analy
 4. Attach appropriate descriptive labels to columns.
 5. Perform computations on the data set to obtain the desired tidy data set.
 
+
 Q: How do I use the 'run_analysis.R' script?
 A:
 Assuming you have R programming language installed in your system. (if not, refer to http://cran.r-project.org/doc/manuals/r-release/R-admin.html ) 
 You can use the script either by running it from command line, using the command
+	
 	Rscript run_analysis.R
+
 or you can run it from the R console, using the command
+
 	source('run_analysis.R')
 
-!Note: The script returns a tidy data set, it would be a good idea to capture this data set into a R object, or else it will flood your console!
+Note: The script returns a tidy data set, it would be a good idea to capture this data set into a R object, or else it will flood your console!
