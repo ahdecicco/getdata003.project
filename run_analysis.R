@@ -89,9 +89,19 @@ final.df <- subset(final.df, select = c(3, 2, 4:ncol(final.df)))
 
 #
 #Aggregate data for unique combinations of the subject and activity features
+#It is similar to a group by clause in SQLs, so here we are grouping by two keys, activity and subject, 
+#the aggregate function 'mean' gets applied to each of the remaining columns as specified
+#now the number of rows will be determined by the combined key i.e. = (no. of activities) * (no. of subjects) = 6 * 30 = 180
 #
-tidy.data <- aggregate( final.df[,3:ncol(final.df)], final.df[,1:2], FUN=mean )
+tidy.data <- aggregate( final.df[,3:ncol(final.df)], by=final.df[,1:2], FUN=mean )
 
+#
+#Create the final tidy data, with just one variable for all the continuous features / measurement based features
+#The subject and activity combination go as the keys for the rows
+#The total number of rows will now be = (no. of measurement features) * (no. of activities) * (no. of subjects) = 79 * 6 * 30 = 14220
+#
+library(reshape2)
+tidy.data = melt(tidy.data, id=colnames(tidy.data[,1:2]), measure.vars=colnames(tidy.data[,3:ncol(tidy.data)]))
 #
 #Return
 #
